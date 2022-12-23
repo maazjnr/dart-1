@@ -10,4 +10,12 @@ void main(List<String> arguments) {
   double myDouble = 5.5;
 
   print(myInt + myDouble);
+
+  if(myInt == 5) {
+    print('correct');
+  } else {
+    print("Not Correct");
+  }
+
+
 }
