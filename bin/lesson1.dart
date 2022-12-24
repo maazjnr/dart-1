@@ -1,24 +1,44 @@
 
 void main(List<String> arguments) {
 
-  String correctResult =  'Accurate';
-  String inCorrectResult =  'Code Error, Please try again!';
-
-  int x = 3;
-  x++;
-  x--;
-
-  x = x + 5;
-  x += 5;
-  x -= 5;
-  x *= 5;
-  x ~/= 5;
-
-  bool isEqual = 5 == 10;
-  
-
- String myString =  'hello ${isEqual} ' ;
- print(myString);
-  
+  // ignore: unused_element
+  String returnStringNested() {
+  return "Hello";
 }
 
+  returnStringNested();
+  print(returnString());
+
+}
+
+String returnString() {
+  return 'Hi';
+}
+
+
+void positionalParam(int height, double width, String greeting) {
+  positionalParam(5, 3.3, "Hello");
+
+}
+
+void optionalPositionalParam(int x, double y, [String? greeting]) {
+  optionalPositionalParam(5, 3.5);
+  optionalPositionalParam(5, 3.5, "hi Maaz");
+}
+
+
+void namedOptionalParams({
+  int? x,
+  double? y,
+  String? greeting
+})
+{namedOptionalParams(x: 5, greeting: "hiiii");
+}
+
+void namedRequiredParams({
+  required int x,
+  required double y,
+  required String greeting
+}) {
+  namedRequiredParams(x: 5, y: 3.5, greeting: "yess");
+}
