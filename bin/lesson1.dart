@@ -1,21 +1,24 @@
-import 'package:lesson1/lesson1.dart' as lesson1;
 
 void main(List<String> arguments) {
 
-  String myName = 'Hello Maaz!';
-  print(myName);
-  print(myName.contains("Hello"));
+  String correctResult =  'Accurate';
+  String inCorrectResult =  'Code Error, Please try again!';
 
-  int myInt = 6;
-  double myDouble = 5.5;
+  int x = 3;
+  x++;
+  x--;
 
-  print(myInt + myDouble);
+  x = x + 5;
+  x += 5;
+  x -= 5;
+  x *= 5;
+  x ~/= 5;
 
-  if(myInt == 5) {
-    print('correct');
-  } else {
-    print("Not Correct");
-  }
+  bool isEqual = 5 == 10;
+  
 
-
+ String myString =  'hello ${isEqual} ' ;
+ print(myString);
+  
 }
+
