@@ -32,7 +32,7 @@ void namedOptionalParams({
   double? y,
   String? greeting
 })
-{namedOptionalParams(x: 5, greeting: "hiiii");
+{namedOptionalParams(x: 5, greeting: "hi");
 }
 
 void namedRequiredParams({
@@ -42,3 +42,5 @@ void namedRequiredParams({
 }) {
   namedRequiredParams(x: 5, y: 3.5, greeting: "yess");
 }
+
+ 
