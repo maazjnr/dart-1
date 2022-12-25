@@ -1,24 +1,27 @@
 void main(List<String> args) {
 
-  List<int> myList = [1, 2, 3, 0];
-  final myOtherList = [12, 40, 17, 90];
+  // ignore: unused_local_variable
+  bool isSignedIn = true;
+  <String>[
+    "This is a fake content",
+    // ignore: dead_code
+    if(isSignedIn) "Signed out" else "Sign In"
+  ];
 
-  Map<String, dynamic> myMap = {
-    "name": 'John Abah',
-    "age": 28,
-    "registered" : true
-  };
+  final x = <String> [
+    for(var o = 0; o < 10; o++) o.toString(),
+  ];
 
-  var getMapData = myMap["name"];
+  print(x);
 
-  Set<int> mySet = {1, 2, 3, 3};
-  //set can not have the same value.
-  //just like it indicate up there! 3 can't in the same set with 3
+  final List1 = ["hello", "hi"];
+  final List2 = ["Yes", "Yo"];
 
-  print(getMapData);
-  print(myList);
-  print(myOtherList);
-  print(mySet);
+ final myStr =  <String> [
+    ...List1,
+    ...List2,
+  ];
 
+  print(myStr);
 
 }
